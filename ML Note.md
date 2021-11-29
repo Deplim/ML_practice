@@ -54,3 +54,14 @@
 ----  
   - CPU 혹은 GPU 의 **SIMD**(Single Instruction Multiple Data) 을 활용하기 위함임. GPU 가 병렬 계산을 CPU 보다 잘 해서 학습에 유리하다고 하는 이유가 이것 때문.
 <br><br>
+
+#### 비선형 활성화 함수의 역할
+
+---
+
+- 이에 대해서는 보통 *"**활성화 함수가 없다면 신경 망은 입력 값에 대해 선형식만을 계산하기 때문에 은닉층이 없는 것이나 다름이 없다.**"* 라고 설명이 되어 있다. ([Why must a nonlinear activation function be used in a backpropagation neural network?](https://stackoverflow.com/questions/9782071/why-must-a-nonlinear-activation-function-be-used-in-a-backpropagation-neural-net))
+- (개인적인 생각)
+    
+    다층 신경망을 쓰는 이유의 예시로 알려져 있는 **perceptron 의 XOR 문제**에서도 사실 step function 이라는 활성화 함수가 없다면 아무리 층을 많이 쌓아도 해결 불가능하다. 활성화 함수가 입력 값의 범위에 따라서 이를 의미 있는 정보로 바꿔주기 때문에 (0 or 1) 추가적인 층을 사용하는 것이 도움이 되는 것.
+    
+    비선형적인 활성화함수라는건 입력 값의 범위에 따라 다른 양상의 출력값이 나오도록 함으로써  **입력 값이 가지는 특성을 변환해서 표현해주는** 역할을 하는 것 같다.
