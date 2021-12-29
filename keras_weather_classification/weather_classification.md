@@ -338,7 +338,7 @@ Epoch 300/300
 
 ![Untitled](https://github.com/Deplim/ML_practice/blob/main/keras_weather_classification/image/history.png?raw=true)
 
-# 6. 참여 소감
+# 6. 후기
 
 처음에는 vgg16모델을 기준으로 어느 정도 loss 가 줄어드는지 확인한 후 모델 최적화(파라미터 수를 줄이는) 와 정규화를 통해서 최대한 가벼우면서 과적합이 없는 모델을 얻으려고 하였습니다. 기본적으로 bias 를 충분히 줄일 수 있는 모델이어야 했기에 epoch 50 이 넘어가기 전에 train data set 의 accuaracy 가 1에 도달할 수 있어야 한다는 기준을 놓고 cnn layer 의 filter 수를 줄여나갔습니다. 그 이후에는 data augumentation 과 l2 regularization 과 dropout 을 이용한 정규화를 진행했습니다. 
 
